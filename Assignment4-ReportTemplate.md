@@ -23,16 +23,18 @@ The second part of this lab focuses on GUI and web testing. Given the popularity
 ## DataUtilities
 
 **Original Test Suite Scores**
+![](report_images/DataUtilities_before.JPG) 
 
 **Updated Test Suite Scores**
+![](report_images/DataUtilities_after.JPG) 
 
 ## Range
 
 **Original Test Suite Scores**<br/>
-![](report_images/DataUtilities_before.JPG) 
+
 
 **Updated Test Suite Scores**<br/>
-![](report_images/DataUtilities_after.JPG) 
+
 
 # Analysis drawn on the effectiveness of each of the test classes
 
