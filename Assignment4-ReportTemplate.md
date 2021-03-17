@@ -20,15 +20,48 @@ The second part of this lab focuses on GUI and web testing. Given the popularity
 
 # Report all the statistics and the mutation score for each test class
 
+## DataUtilities
 
+**Original Test Suite Scores**
+
+**Updated Test Suite Scores**
+
+## Range
+
+**Original Test Suite Scores**
+![](report_images/DataUtilities_before.jpg) 
+
+**Updated Test Suite Scores**
+![](report_images/DataUtilities_after.jpg) 
 
 # Analysis drawn on the effectiveness of each of the test classes
 
+## DataUtilities Test Suite
+
+
+
+## Range Test Suite
+
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
+Equivalent mutants are mutants that do not affect the functionality of the software any differently than the original code. The reason this is such a big deal is that these mutants will give a misleading mutation score. This outcome is due to the fact that any test case that passes on the original software will also pass with the equivalent mutant implemented. 
+
+The problem with the presense of these equivalent mutants is they will inflate the mutation score. If a large number of equivalent mutants exist, then your mutation score will be very high regardless of how robust and well designeed the test suite is. The presense of equivalent mutants must always be kept in mind when evaluateing the results of mutation testing.
+
 # A discussion of what could have been done to improve the mutation score of the test suites
+In order to improve the test score of our test suites
 
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
+
+We need in order to assess the quality of our test suites. Mutants allow us to introduce defects into our program in order to check and see if our test suite will catch these mutants, or if they will get past our testing. This is important because it allows us to improve our testing in the absence of any real defects in the production code.
+
+**Advantages**
+- Allows a quantatative measurement of how robust your test suite is.
+- Ensures that bugs are unlikely to slip past your testing.
+
+**Disadvantages**
+- Time consuming and requires automation
+- Boosting mutation score can be time consuming and may not yield any benefits in terms of fixing actualy bugs in your software.
 
 # Explain your SELENUIM test case design process
 
