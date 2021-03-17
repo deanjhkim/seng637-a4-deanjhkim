@@ -22,10 +22,10 @@ The second part of this lab focuses on GUI and web testing. Given the popularity
 
 ## DataUtilities
 
-**Original Test Suite Scores**
+**Original Test Suite Scores**<br/>
 ![](report_images/DataUtilities_before.JPG) 
 
-**Updated Test Suite Scores**
+**Updated Test Suite Scores**<br/>
 ![](report_images/DataUtilities_after.JPG) 
 
 ## Range
