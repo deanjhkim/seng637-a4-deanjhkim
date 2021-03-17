@@ -22,25 +22,15 @@ The second part of this lab focuses on GUI and web testing. Given the popularity
 
 ## DataUtilities
 
-**Original Test Suite Scores**<br/>
-![](report_images/DataUtilities_before.JPG) 
-
-**Updated Test Suite Scores**<br/>
 ![](report_images/DataUtilities_after.JPG) 
 
 ## Range
-
-**Original Test Suite Scores**<br/>
-
-
-**Updated Test Suite Scores**<br/>
-
 
 # Analysis drawn on the effectiveness of each of the test classes
 
 ## DataUtilities Test Suite
 
-
+Overall this test suite is generally effective based on the high coverage and mutant coverage scores. It is important to note that their are likely equivalent mutants present which will be inflating the score (see later section on this topic).
 
 ## Range Test Suite
 
@@ -51,7 +41,10 @@ Equivalent mutants are mutants that do not affect the functionality of the softw
 The problem with the presense of these equivalent mutants is they will inflate the mutation score. If a large number of equivalent mutants exist, then your mutation score will be very high regardless of how robust and well designeed the test suite is. The presense of equivalent mutants must always be kept in mind when evaluateing the results of mutation testing.
 
 # A discussion of what could have been done to improve the mutation score of the test suites
-In order to improve the test score of our test suites
+
+In order to improve the mutant coveerage score of our test suites the first step is to analyze the results of the Pitest. The goal of this is to observe which mutants are surviving. Based on the mutants that survive a strategy can be implemented to write a test case that will destroy this mutant. To determine what this test case should look like the Pitest tool allows us to view the mutant code. By viewing the code we will be able to determine what methods need to be further tested, and what the inputs for these methods should be in order to expose the mutant. Once determined a test case will be written applying the same principles of lab 2.
+
+By writing these new test cases our mutant coverage scores will increase, meaning that our test suite will be more effective and robust.
 
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
 
