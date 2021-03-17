@@ -142,56 +142,54 @@ public class DataUtilitiesCalculateColumnTotalTest {
 
 	}
 	
-//	@Test
-//	// Robustness test
-//	// data: nominal object, returns index out of bounds
-//	// column: -1, invalid number
-//	public void testNegativeRowCalculateColumnTotal() {
-//		Mockery context = new Mockery();
-//		final Values2D values = context.mock(Values2D.class);
-//		context.checking(new Expectations() {
-//			{
-//				one(values).getRowCount();
-//				will(returnValue(2));
-//				one(values).getValue(0, -1);
-//				will(throwException(new IndexOutOfBoundsException()));
-//				one(values).getValue(1, -1);
-//				will(throwException(new IndexOutOfBoundsException()));
-//			}
-//		});
-//
-//		try {
-//			double result = DataUtilities.calculateColumnTotal(values, -1);
-//			assertEquals(result, 0.0, .000000001d);
-//		} catch (Exception e) {
-//			fail("Exception: " + e);
-//		}
-//	}
+	@Test
+	// Robustness test
+	// data: nominal object, returns index out of bounds
+	// column: -1, invalid number
+	public void testNegativeRowCalculateColumnTotal() {
+		Mockery context = new Mockery();
+		final Values2D values = context.mock(Values2D.class);
+		context.checking(new Expectations() {
+			{
+				one(values).getRowCount();
+				will(returnValue(2));
+				one(values).getValue(0, -1);
+				will(throwException(new IndexOutOfBoundsException()));
+				one(values).getValue(1, -1);
+				will(throwException(new IndexOutOfBoundsException()));
+			}
+		});
 
-//	@Test
-//	// Robustness test
-//	// data: nominal object, returns index out of bounds
-//	// column: 3, invalid number out of range
-//	public void testRowOutOfRangeRowCalculateColumnTotal() {
-//		Mockery context = new Mockery();
-//		final Values2D values = context.mock(Values2D.class);
-//		context.checking(new Expectations() {
-//			{
-//				one(values).getRowCount();
-//				will(returnValue(2));
-//				one(values).getValue(0, 3);
-//				will(throwException(new IndexOutOfBoundsException()));
-//				one(values).getValue(1, 3);
-//				will(throwException(new IndexOutOfBoundsException()));
-//			}
-//		});
-//
-//		try {
-//			Double result = DataUtilities.calculateColumnTotal(values, 3);
-//			assertEquals(result, 0.0, .000000001d);
-//		} catch (Exception e) {
-//			fail("Exception: " + e);
-//		}
-//	}
-//
+		try {
+			double result = DataUtilities.calculateColumnTotal(values, -1);
+			assertEquals(result, 0.0, .000000001d);
+		} catch (Exception e) {
+		}
+	}
+
+	@Test
+	// Robustness test
+	// data: nominal object, returns index out of bounds
+	// column: 3, invalid number out of range
+	public void testRowOutOfRangeRowCalculateColumnTotal() {
+		Mockery context = new Mockery();
+		final Values2D values = context.mock(Values2D.class);
+		context.checking(new Expectations() {
+			{
+				one(values).getRowCount();
+				will(returnValue(2));
+				one(values).getValue(0, 3);
+				will(throwException(new IndexOutOfBoundsException()));
+				one(values).getValue(1, 3);
+				will(throwException(new IndexOutOfBoundsException()));
+			}
+		});
+
+		try {
+			Double result = DataUtilities.calculateColumnTotal(values, 3);
+			assertEquals(result, 0.0, .000000001d);
+		} catch (Exception e) {
+		}
+	}
+
 }
