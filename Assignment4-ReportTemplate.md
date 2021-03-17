@@ -3,15 +3,18 @@
 
 **Lab. Report \#4 – Mutation Testing and Web app testing**
 
-| Group \#:       |   |
+| Group \#:       |  14 |
 |-----------------|---|
 | Student Names:  |   |
-|                 |   |
-|                 |   |
+|           Evan Boerchers      |   |
+|           Dean Kim      |   |
 |                 |   |
 
 # Introduction
 
+This lab covers 2 core concepts of testing. The first concept is mutation testing, a test methodology that is useed to validate how well a test suite is designed, and whether it has any weaknesses. This is done by introducing mutants, these being modified code that add bugs in order to test if your current test suite, kills these mutatnts or not. In this lab we will use the test suite in lab 3 to test mutation testing using pitest. We will evaluate our test suite and aim to improve it.
+
+The second part of this lab focuses on GUI and web testing. Given the popularity of websites and GUI the concepts of automating web and GUI testing are very important. To demonstrate the concepts of GUI testing the Selenium plugin was implemented to design our test cases. These automated test cases were executed and the results reported. Additionally, we compared Selenium to another tool, Sikulix.
 
 # Analysis of 10 Mutants of the Range class 
 
