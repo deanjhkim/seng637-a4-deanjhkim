@@ -1,0 +1,507 @@
+{
+  "id": "ca52225f-1a08-4c44-9230-470766629ad8",
+  "version": "2.0",
+  "name": "SENG637-a4-IKEA",
+  "url": "https://www.ikea.com/ca/en/",
+  "tests": [{
+    "id": "118b0188-1cfd-4b82-8ac0-92d0e8c77528",
+    "name": "Login (incorrect)",
+    "commands": [{
+      "id": "209e4c6d-a7ce-40b2-9a65-654963456cf1",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65904a47-fbc7-4486-807f-ae96f2f08de6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1888x1004",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd1f4fdd-5ca6-4dac-b3d2-d0bfeff31e94",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-header__profile-link .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-header__profile-link .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fd45ab6-de00-435d-92d4-08c2ac06b3f8",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70a57b7c-5b1d-4c76-bdfa-9cb0324086f5",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.form-field:nth-child(1) label",
+      "targets": [
+        ["css=.form-field:nth-child(1) label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Email address or Phone number')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad12f6be-0c73-43b7-b553-7c5525087bc7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-field:nth-child(1) > .input-wrap",
+      "targets": [
+        ["css=.form-field:nth-child(1) > .input-wrap", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50c9c9e5-12ef-43a5-9b3b-a46a7ae20b12",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "evan.boerchers@ucalgary.ca"
+    }, {
+      "id": "a18f4cf2-ec03-4937-9036-1c0ca233ea4c",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64c58ae7-4c06-48eb-8ebe-482e47413669",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.input-wrap--trailing-icon > label",
+      "targets": [
+        ["css=.input-wrap--trailing-icon > label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/div[3]/div/label", "xpath:idRelative"],
+        ["xpath=//div[3]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae4e2f29-9023-43ad-9065-7feeb8a8f9cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-wrap--trailing-icon",
+      "targets": [
+        ["css=.input-wrap--trailing-icon", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c21d4b78-f112-495f-aee2-f5c9746e06bf",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "bc3836f0-a8e2-4eef-b2ad-f107571361cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn--transactional",
+      "targets": [
+        ["css=.btn--transactional", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0720b43-604f-4691-88e0-339f8ab96559",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn--transactional",
+      "targets": [
+        ["css=.btn--transactional", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1aae07b5-2838-4cb6-b03f-26c5c1b06331",
+    "name": "Login (right)",
+    "commands": [{
+      "id": "bb91c077-d37a-4041-9b71-68a2a39fc5d3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e46394eb-e76c-4eae-aabc-0998bf278720",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1888x1004",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "165cc1d4-6333-4453-9b2e-9a83b81f63fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-header__profile-link .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-header__profile-link .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75b7bcc4-0b94-48cb-964d-21cb3094cb0b",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3404606-f019-4443-8866-845470006046",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.form-field:nth-child(1) label",
+      "targets": [
+        ["css=.form-field:nth-child(1) label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Email address or Phone number')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9d1d34f-7c38-415c-8346-8ce7bae3b09b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-field:nth-child(1) > .input-wrap",
+      "targets": [
+        ["css=.form-field:nth-child(1) > .input-wrap", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7aeebc2b-bbc9-44fa-8a48-d59acb0af3d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "evan.boerchers@ucalgary.ca"
+    }, {
+      "id": "320ca03d-eb57-4ce0-b168-e32e08709d9b",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89ee23ea-28b0-4ca5-a45a-266d97f4ca6b",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.input-wrap--trailing-icon > label",
+      "targets": [
+        ["css=.input-wrap--trailing-icon > label", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/div[3]/div/label", "xpath:idRelative"],
+        ["xpath=//div[3]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91ac7173-b0f2-435c-9c04-0d21fd42f4ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-wrap--trailing-icon",
+      "targets": [
+        ["css=.input-wrap--trailing-icon", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f1ed258-b02d-452a-bbf0-6802e23dcb6a",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Seng637a4"
+    }, {
+      "id": "57c44f23-7fd2-4a24-8988-7f9b39223005",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn--transactional",
+      "targets": [
+        ["css=.btn--transactional", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6a8b58e-8f68-4d86-a2ac-55a193e5d2f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=tab-button-address",
+      "targets": [
+        ["id=tab-button-address", "id"],
+        ["css=#tab-button-address", "css:finder"],
+        ["xpath=//button[@id='tab-button-address']", "xpath:attributes"],
+        ["xpath=//div[@id='profile-frontend']/div[2]/div/div/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Address')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bd6b7ab-6863-4e59-8074-251e5292bb12",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=profile-page-headline",
+      "targets": [
+        ["id=profile-page-headline", "id"],
+        ["css=#profile-page-headline", "css:finder"],
+        ["xpath=//h1[@id='profile-page-headline']", "xpath:attributes"],
+        ["xpath=//div[@id='profile-frontend']/div/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Hello SENG!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b044c7be-62dd-441b-9ee1-ac2880122a3e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log out",
+      "targets": [
+        ["linkText=Log out", "linkText"],
+        ["css=.profile__text-colour-grey-700 > .profile__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
+        ["xpath=//div[@id='profile-frontend']/div/div/div/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ca/en/profile/logout/')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f076a2e7-d13c-485d-9dde-cd2e16c077ec",
+    "name": "Search (typo)",
+    "commands": [{
+      "id": "73b3555d-3d4c-4e2f-962d-48a5808d0690",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a4dc65c-43e1-4f36-9978-73e31b53d0b0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1887x1004",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50523ebc-e7c5-49bd-adba-9d2c0923761c",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de6526da-9b9a-4117-8ca1-69cd815803a8",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Deask"
+    }, {
+      "id": "6be99c2d-4af9-41da-bae0-df0146608198",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9c435eef-3b45-4906-a413-c4321531e8c6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.search_summary__autocorrect-text > span",
+      "targets": [
+        ["css=.search_summary__autocorrect-text > span", "css:finder"],
+        ["xpath=//main[@id='content']/div/div/div/div/p/span", "xpath:idRelative"],
+        ["xpath=//p/span", "xpath:position"],
+        ["xpath=//span[contains(.,'No matches for \"Deask\"')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1862935-12e5-4860-90a1-a5e44ec8be5c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=b",
+      "targets": [
+        ["css=b", "css:finder"],
+        ["xpath=//main[@id='content']/div/div/div/div/h1/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'desk')]", "xpath:innerText"]
+      ],
+      "value": "desk"
+    }]
+  }, {
+    "id": "14978d66-9c77-4d1f-acb3-aca4f7e1f04f",
+    "name": "Search (right)",
+    "commands": [{
+      "id": "3470fc6a-50cf-47d0-ba13-1e0e84a8feab",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad4f7fa2-45d5-457b-bdec-ffbc2f3b0e9a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1887x1004",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "260e2c52-6e34-42d6-a5cb-e606e94c58ad",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47bef7cd-fbdc-4df7-be77-63162c2fd97e",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Desk"
+    }, {
+      "id": "0cd6fe1e-1e3f-40af-8043-0f0dbca86024",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6abf4a87-9c64-4ce1-9c59-50ab362c903d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.search-summary__heading",
+      "targets": [
+        ["css=.search-summary__heading", "css:finder"],
+        ["xpath=//main[@id='content']/div/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Showing matches for \"Desk\"')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b7778b7-cef5-4272-98b5-2e2219ee06ad",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=b",
+      "targets": [
+        ["css=b", "css:finder"],
+        ["xpath=//main[@id='content']/div/div/div/div/h1/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Desk')]", "xpath:innerText"]
+      ],
+      "value": "Desk"
+    }]
+  }],
+  "suites": [{
+    "id": "9841306a-3bb3-4de0-8305-17d03fc6c653",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.ikea.com/ca/en/"],
+  "plugins": []
+}
