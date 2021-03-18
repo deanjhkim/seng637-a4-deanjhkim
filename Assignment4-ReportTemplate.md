@@ -60,15 +60,63 @@ We need in order to assess the quality of our test suites. Mutants allow us to i
 
 # Explain your SELENUIM test case design process
 
+Our test case design process aimed to isolate single uses of functionality and verify that the worked as expected based on the given data. Given the fact that we as active web users understand how websites should function, we opted to simply record our actions on the given website as we an average user would do so. Once the proper functionality has been performed and recorded, we added assertions to verify that the outcome of these actions was the one that is expected. 
+
+In regards to the data we inputed for each functionality, we tried to use different inputs mainly to verify the outcomes of inproper inputs and proper inputs.
+
+Our test cases can be seen in the Selenium Test Cases folder of this project. Each website has its own selenium project. All tests for the website are run from the respective project.
+
 # Explain the use of assertions and checkpoints
 
-# how did you test each functionaity with different test data
+Assertions and checkpoints are needed in order to claim that the test suite is fully automated. Assertions are used to verify the outcome of certain events. Failing any of these assertions means that the test itself has faileed. Assertions are valuable because they allow us to verify GUI functionality without manual checking, which would take to long and is prone to error.
+
+In the case of our test suites we used assertions to verify that the expected output was obtained when we performed the recored actions. For example the assertion was made that give the proper login info the Ikea website should bring the user to the profile page. This expected output was verified with assertions.
+
+# how did you test each functionality with different test data
+
+Using different test data is important to verify different use cases. I.e the resulting outcome of certain functionality will be different based on the data provided. We opted to have different tests using different test data for each functionality. For example, in the case of the login we needed to verify the outcomes of using correct login info and incorrecet login info. To do so 2 tests were created, one using proper login info and one inproper, the resulting assertions were customized based on what the outcome should be for each login scenario. The same goes for the other test functionality.
 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
+### Selenium
+
+**Pros**<Br/>
+- Easy to learn
+- Simple GUI
+- Intuitive features
+- If elements change there is a recurzive search tool that may rectify the issue
+- No programming experience neeeded
+- Decent documentation based on popularity
+
+**Cons**<Br/>
+- Some assertions are hard to implement since the target selector does not work with them
+- Elements changing could break test suites
+- Plugin for existing web browser
+- No error handling support
+- No if statements
+
+### Sikulix
+**Pros**<Br/>
+- Poor documentation, not very popular
+- Open source
+- Can interact with desktop applications
+- Picture recognition
+- Can be integrated with Selenium
+- Do not need element info to verify
+
+**Cons**<Br/>
+- Resolution dependent
+- Platform dependent
+- Image matching requires screenshots.
+- Image recognition can be faulty at times
+
 # How the team work/effort was divided and managed
 
+Team work was divided equally. For the first part of this lab, Evan focused on mutation testing for data utilities, while Dean focused on the Range class. Results were reported and recorded accordingly. For the second part of the assignment we both aimed to test 2 peices of functionality. Evan did this for the Ikea website while dean did so for Amazon.
+
+The report load was shared and we each wrote sections respective to the tasks we performed in the lab.
 
 # Difficulties encountered, challenges overcome, and lessons learned
+
 
 # Comments/feedback on the lab itself
