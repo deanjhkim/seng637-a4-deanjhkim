@@ -117,7 +117,7 @@ Analysis:  This mutant isn't killed because there is no test method that calls f
 
 ## Range
 
-![](report_images/Range_before.JPG) 
+![](report_images/Range_before.jpg) 
 
 # Analysis drawn on the effectiveness of each of the test classes
 
