@@ -119,6 +119,10 @@ Analysis:  This mutant isn't killed because there is no test method that calls f
 
 ![](report_images/Range_before.jpg) 
 
+After addition of new test cases for the Range test class, mutation coverage was increased to 41% - an increase of 15%. The focus of the new test cases were methods of Range not covered in the original test suite - since Range has 15 methods and the previous test suite only developed tests for 7 of them, adding coverage for constrain, getCentralValue, getLength and hashCode methods resulted in improved mutatation coverage. This is contrasted by the DataUtilities test suite, which had extremely high coverage of 94% when initially tested, making it difficult to find opportunities to improve the mutation coverage.
+
+![](report_images/Range_after.jpg) 
+
 # Analysis drawn on the effectiveness of each of the test classes
 
 ## DataUtilities Test Suite
@@ -127,15 +131,22 @@ Overall this test suite is generally effective based on the high coverage and mu
 
 ## Range Test Suite
 
+Even after the addition of the new test cases, mutation coverage remains low at 41%. This could be attributed to the relative complexity of the code, with the class containing methods that have 2-4 conditional logic statements and different return statements for each outcome. This style of code provides many opportunities for mutation, and the current test case is not thorough enough to provide high mutation coverage. A different approach to testing should be taken for the Range class, with addition of assertion statements that cover common mutations such as replacement of conditional statements with true or false booleans.
+
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
 Equivalent mutants are mutants that do not affect the functionality of the software any differently than the original code. The reason this is such a big deal is that these mutants will give a misleading mutation score. This outcome is due to the fact that any test case that passes on the original software will also pass with the equivalent mutant implemented. 
 
-The problem with the presense of these equivalent mutants is they will inflate the mutation score. If a large number of equivalent mutants exist, then your mutation score will be very high regardless of how robust and well designeed the test suite is. The presense of equivalent mutants must always be kept in mind when evaluateing the results of mutation testing.
+The problem with the presense of these equivalent mutants is they will inflate the mutation score. If a large number of equivalent mutants exist, then your mutation score will be very high regardless of how robust and well designed the test suite is. The presence of equivalent mutants must always be kept in mind when evaluating the results of mutation testing.
+
+An pair programming effort was made to detect a few equivalent mutants in the Range class using the exploratory method. The focus of the testing was on the surviving mutations, as killed mutants had changes that were already detected by the test suite, meaning they could not be semantically identical to the original code. No obvious equivalent mutations were found in about 300 mutations examined for the Range class. An example of an equivalent mutation for the range class would be to substitute a value in code, such as 0.0, with a functionally identical value, such as 0e-9. 
+
+![](report_images/sampleMutationsRange.jpg)  
+Example of mutations examined for equivalency.  
 
 # A discussion of what could have been done to improve the mutation score of the test suites
 
-In order to improve the mutant coveerage score of our test suites the first step is to analyze the results of the Pitest. The goal of this is to observe which mutants are surviving. Based on the mutants that survive a strategy can be implemented to write a test case that will destroy this mutant. To determine what this test case should look like the Pitest tool allows us to view the mutant code. By viewing the code we will be able to determine what methods need to be further tested, and what the inputs for these methods should be in order to expose the mutant. Once determined a test case will be written applying the same principles of lab 2.
+In order to improve the mutant coverage score of our test suites the first step is to analyze the results of the Pitest. The goal of this is to observe which mutants are surviving. Based on the mutants that survive a strategy can be implemented to write a test case that will destroy this mutant. To determine what this test case should look like the Pitest tool allows us to view the mutant code. By viewing the code we will be able to determine what methods need to be further tested, and what the inputs for these methods should be in order to expose the mutant. Once determined a test case will be written applying the same principles of lab 2.
 
 By writing these new test cases our mutant coverage scores will increase, meaning that our test suite will be more effective and robust.
 
@@ -144,7 +155,7 @@ By writing these new test cases our mutant coverage scores will increase, meanin
 We need in order to assess the quality of our test suites. Mutants allow us to introduce defects into our program in order to check and see if our test suite will catch these mutants, or if they will get past our testing. This is important because it allows us to improve our testing in the absence of any real defects in the production code.
 
 **Advantages**
-- Allows a quantatative measurement of how robust your test suite is.
+- Allows a quantitative measurement of how robust your test suite is.
 - Ensures that bugs are unlikely to slip past your testing.
 
 **Disadvantages**
@@ -210,6 +221,7 @@ Team work was divided equally. For the first part of this lab, Evan focused on m
 The report load was shared and we each wrote sections respective to the tasks we performed in the lab.
 
 # Difficulties encountered, challenges overcome, and lessons learned
-
+The team had some difficulty setting up the PiTest tool, and went through documentation on the PiTest site as well as explanations of fixes for common errors on StackOverflow in order to properly set up the lab. There was a good amount of learning new technologies for this lab as the lab was broken up into 2 separate exercises. The team practiced effective communication and pair programmed to share knowledge whenever possible, greatly speeding up the learning process for our team.
 
 # Comments/feedback on the lab itself
+This lab was good overall, very practical and introduces two commonly used tools for testing applications. The team enjoyed working through the lab and has no major criticism or feedback on the lab structure.  
