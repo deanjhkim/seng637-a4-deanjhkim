@@ -36,7 +36,7 @@ public class ShiftRangeDoubleZeroCrossingTestCase {
 	//delta: a valid double to shift the range by
 	//allowZeroCrossing: true, boolean - range will be shifted across zero with no modifications
 	public void shiftWithZeroCrossing() {
-		Range.shift(range1, 200, true);
+		range1 = Range.shift(range1, 200, true);
 		assertEquals("The lower bound of the range should be 100",
 		100, range1.getLowerBound(), 000000001d);
 		
@@ -55,7 +55,8 @@ public class ShiftRangeDoubleZeroCrossingTestCase {
 	//delta: a valid double to shift the range by
 	//allowZeroCrossing: false, boolean - any bound that crosses the zero mark after shifting will become zero
 	public void shiftNoZeroCrossing() {
-		Range.shift(range1, 200, false);
+		range1 = Range.shift(range1, 200, false);
+
 		assertEquals("The lower bound of the range should be 0",
 		0, range1.getLowerBound(), 000000001d);
 		

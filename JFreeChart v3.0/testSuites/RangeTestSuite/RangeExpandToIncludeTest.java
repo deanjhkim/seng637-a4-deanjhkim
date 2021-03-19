@@ -35,7 +35,8 @@ public class RangeExpandToIncludeTest {
 	//range: a valid range object
 	//value: a valid double not in the initial range
 	public void expandToIncludeValueOutsideRange() {
-		Range.expandToInclude(range1, 200);
+		range1 = Range.expandToInclude(range1, 200);
+		
 		assertEquals("The lower bound of the range should be -100",
 		-100, range1.getLowerBound(), 000000001d);
 		
@@ -53,16 +54,16 @@ public class RangeExpandToIncludeTest {
 	//range: a valid range object
 	//value: a valid double not in the initial range less than the lower bound
 	public void expandToIncludeValueOutsideRangeLesser() {
-		Range.expandToInclude(range1, -200);
-		assertEquals("The lower bound of the range should be -100",
-		-100, range1.getLowerBound(), 000000001d);
+		range1 = Range.expandToInclude(range1, -200);
+		assertEquals("The lower bound of the range should be -200",
+		-200, range1.getLowerBound(), 000000001d);
 		
 		if (range1.getUpperBound() == range1.getLowerBound()) {
 			fail("Range class getUpperBound method is flawed and returns lower bound, test failed - no way to obtain expanded range's upper boundary");
 		}
 		else {
-			assertEquals("The upper bound of the range should be 200",
-					200, range1.getUpperBound(), 000000001d);
+			assertEquals("The upper bound of the range should be 100",
+					100, range1.getUpperBound(), 000000001d);
 		}
 	}
 	
