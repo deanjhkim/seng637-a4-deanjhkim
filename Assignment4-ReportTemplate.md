@@ -113,6 +113,10 @@ Analysis:  This mutant isn't killed because there is no test method that calls f
 
 ## DataUtilities
 
+![](report_images/DataUtilities_before.JPG) 
+
+After addition of new test cases, mutation coverage was increased to 94%. The focus of the new test cases were to cover and find mutants that survived. For example if a mutant was found at a certain point in the code that was unexplored, this code needed to be covered. Additionally, input paramters to methods could be tuned to uncover mutants.
+
 ![](report_images/DataUtilities_after.JPG) 
 
 ## Range
