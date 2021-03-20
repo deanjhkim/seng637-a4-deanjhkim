@@ -123,7 +123,7 @@ After addition of new test cases, mutation coverage was increased to 94%. The fo
 
 ![](report_images/Range_before.jpg) 
 
-After addition of new test cases for the Range test class, mutation coverage was increased to 41% - an increase of 15%. The focus of the new test cases were methods of Range not covered in the original test suite - since Range has 15 methods and the previous test suite only developed tests for 7 of them, adding coverage for constrain, getCentralValue, getLength and hashCode methods resulted in improved mutatation coverage. This is contrasted by the DataUtilities test suite, which had extremely high coverage of 94% when initially tested, making it difficult to find opportunities to improve the mutation coverage.
+After addition of new test cases for the Range test class, mutation coverage was increased to 41% - an increase of 15%. The focus of the new test cases were methods of Range not covered in the original test suite - since Range has 15 methods and the previous test suite only developed tests for 7 of them, adding coverage for constrain, getCentralValue, getLength and hashCode methods resulted in improved mutatation coverage. This is contrasted by the DataUtilities test suite, which had a high coverage of 77% when initially tested, making it difficult to find opportunities to improve the mutation coverage.
 
 ![](report_images/Range_after.jpg) 
 
@@ -180,7 +180,7 @@ Assertions and checkpoints are needed in order to claim that the test suite is f
 
 In the case of our test suites we used assertions to verify that the expected output was obtained when we performed the recored actions. For example the assertion was made that give the proper login info the Ikea website should bring the user to the profile page. This expected output was verified with assertions.
 
-# how did you test each functionality with different test data
+# How each functionality was tested with different test data
 
 Using different test data is important to verify different use cases. I.e the resulting outcome of certain functionality will be different based on the data provided. We opted to have different tests using different test data for each functionality. For example, in the case of the login we needed to verify the outcomes of using correct login info and incorrecet login info. To do so 2 tests were created, one using proper login info and one inproper, the resulting assertions were customized based on what the outcome should be for each login scenario. The same goes for the other test functionality.
 
